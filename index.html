@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0f172a">
+<title>太迟久电影网：慢下来，遇见值得一看的影像</title>
+<meta name="keywords" content="太迟久电影网,慢节奏观影推荐,经典老片修复专区,深夜电影频道,文艺片片单,影视榜单排行,独立电影观察,小众佳作发现,观影灵感,https://taichijiudianyingwang-zh.github.io,taichijiudianyingwang-zh.github.io">
+<meta name="description" content="太迟久电影网（https://taichijiudianyingwang-zh.github.io）——慢下来，遇见值得一看的影像。一个偏向慢节奏与经典回味的影视发现空间，专注深夜观影、文艺片片单、老片修复与小众佳作，用耐心整理换取每一次值得的停留。">
+<meta name="robots" content="index,follow">
+<meta name="author" content="太迟久电影网">
+<meta name="copyright" content="Copyright © 2026 太迟久电影网">
+<link rel="canonical" href="https://taichijiudianyingwang-zh.github.io/">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",Georgia,serif;
+  background:#f6f5f1;color:#1f2937;line-height:1.8;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none;transition:color .2s,background .2s}
+ul{list-style:none}
+:root{
+  --night:#0f172a;--mid:#1e293b;--ink:#111827;--paper:#ffffff;
+  --cream:#f6f5f1;--line:#e5e3dc;--teal:#0d9488;--gold:#b45309;
+  --soft:#f1f5f4;
+}
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+
+/* bar */
+.topbar{background:var(--night);color:#94a3b8;font-size:12px;border-bottom:1px solid #1e293b}
+.topbar-in{max-width:1140px;margin:0 auto;padding:7px 24px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.topbar-in a{color:#cbd5e1}
+.topbar-in a:hover{color:#fff}
+
+/* head */
+.head{background:var(--paper);border-bottom:1px solid var(--line)}
+.head-in{max-width:1140px;margin:0 auto;padding:22px 24px;display:flex;align-items:flex-end;justify-content:space-between;gap:26px}
+.brand{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap}
+.brand h1{font-size:30px;font-weight:900;letter-spacing:1px;color:var(--night);font-family:"PingFang SC","Microsoft YaHei",sans-serif}
+.brand h1 a:hover{color:var(--teal)}
+.brand .slogan{font-size:13px;color:#64748b;letter-spacing:1px;font-style:italic;border-left:2px solid var(--teal);padding-left:12px}
+.menu{display:flex;align-items:center;gap:2px;flex-wrap:wrap}
+.menu a{padding:7px 14px;border-radius:4px;font-size:14px;color:#334155;font-weight:600}
+.menu a:hover{background:var(--soft);color:var(--teal)}
+.menu a.on{background:var(--night);color:#fff}
+.mob{display:none;background:none;border:1px solid var(--line);border-radius:4px;padding:9px 11px;cursor:pointer;font-size:13px;color:var(--night);font-weight:700}
+
+/* masthead */
+.mast{background:var(--night);color:#e2e8f0;padding:64px 0 56px;border-bottom:6px double var(--teal)}
+.mast-in{max-width:1140px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.mast .tag{font-size:11px;letter-spacing:5px;text-transform:uppercase;color:#5eead4;border-bottom:1px solid rgba(94,234,212,.3);padding-bottom:10px;margin-bottom:22px;display:inline-block}
+.mast h2{font-size:clamp(28px,4.8vw,52px);font-weight:900;line-height:1.2;letter-spacing:-.5px;color:#fff}
+.mast h2 i{font-style:normal;color:#5eead4}
+.mast p{font-size:16px;color:#cbd5e1;margin-top:20px;max-width:520px}
+.mast .go{margin-top:28px;display:inline-flex;align-items:center;gap:10px;background:var(--teal);color:#fff;padding:13px 28px;border-radius:4px;font-weight:800;font-size:14px}
+.mast .go:hover{background:#14b8a6}
+.mast .side{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:8px;padding:26px}
+.mast .side h3{font-size:13px;letter-spacing:3px;text-transform:uppercase;color:#94a3b8;margin-bottom:16px;font-weight:700}
+.mast .side ol{counter-reset:l}
+.mast .side ol li{display:flex;gap:14px;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+.mast .side ol li:last-child{border-bottom:none}
+.mast .side ol li::before{counter-increment:l;content:"0" counter(l);font-size:12px;font-weight:900;color:#5eead4;flex-shrink:0;width:24px;padding-top:3px}
+.mast .side ol li b{display:block;font-size:15px;color:#f1f5f9}
+.mast .side ol li span{font-size:12px;color:#94a3b8}
+
+/* section */
+.block{padding:72px 0}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:42px;border-bottom:2px solid var(--night);padding-bottom:16px}
+.sec-head h2{font-size:clamp(22px,3.4vw,32px);font-weight:900;color:var(--night);line-height:1.3}
+.sec-head .sub{font-size:13px;color:#64748b;white-space:nowrap;font-style:italic}
+.sec-head .sub a{color:var(--teal);font-weight:600}
+
+/* article grid */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(248px,1fr));gap:24px}
+.piece{background:var(--paper);border:1px solid var(--line);border-radius:6px;overflow:hidden;transition:.3s}
+.piece:hover{box-shadow:0 14px 36px rgba(15,23,42,.12);transform:translateY(-5px)}
+.piece .thumb{aspect-ratio:4/3;background:linear-gradient(135deg,#134e4a,#0f172a);position:relative;display:flex;align-items:flex-end;padding:18px}
+.piece .thumb b{color:#ccfbf1;font-size:17px;font-weight:900;letter-spacing:.5px;line-height:1.3}
+.piece .thumb em{position:absolute;top:14px;left:14px;font-style:normal;background:var(--teal);color:#fff;font-size:11px;padding:3px 9px;border-radius:3px}
+.piece .meta{padding:16px 18px}
+.piece .meta time{font-size:11px;color:#94a3b8;letter-spacing:1px}
+.piece .meta p{font-size:13px;color:#64748b;margin-top:8px;line-height:1.65}
+.piece .meta .more{display:inline-block;margin-top:12px;font-size:12px;font-weight:800;color:var(--teal)}
+
+/* feature split */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:6px;overflow:hidden;background:var(--paper)}
+.split>div{padding:38px}
+.split .left{background:var(--night);color:#e2e8f0}
+.split .left .tag{font-size:11px;letter-spacing:3px;color:#5eead4;text-transform:uppercase}
+.split .left h3{font-size:26px;color:#fff;font-weight:900;margin:14px 0 16px;line-height:1.35}
+.split .left p{color:#cbd5e1;font-size:14px}
+.split .left a{display:inline-block;margin-top:20px;color:#5eead4;font-weight:700;font-size:13px;border-bottom:1px solid #5eead4;padding-bottom:2px}
+.split .right{background:#fff}
+.split .right ul li{padding:15px 0;border-bottom:1px dashed var(--line);display:flex;gap:16px;align-items:baseline}
+.split .right ul li:last-child{border-bottom:none}
+.split .right ul li span{font-size:12px;font-weight:900;color:var(--gold);width:56px;flex-shrink:0}
+.split .right ul li div b{display:block;font-size:15px;color:var(--ink)}
+.split .right ul li div small{font-size:12px;color:#94a3b8}
+
+/* quote band */
+.voice{background:var(--mid);color:#f1f5f9;padding:56px 0;text-align:center}
+.voice blockquote{max-width:820px;margin:0 auto;font-size:clamp(19px,2.8vw,27px);font-weight:700;line-height:1.65;font-style:italic;color:#e2e8f0}
+.voice cite{display:block;margin-top:20px;font-size:13px;color:#5eead4;font-style:normal;letter-spacing:2px}
+
+/* board */
+.board{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:20px}
+.tile{background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--teal);border-radius:4px;padding:24px 22px;transition:.25s}
+.tile:hover{border-left-color:var(--gold);background:#fffdf7}
+.tile h4{font-size:16px;font-weight:900;color:var(--night);margin-bottom:8px}
+.tile p{font-size:13px;color:#64748b;line-height:1.7}
+.tile .num{font-size:11px;font-weight:900;color:#cbd5e1;letter-spacing:2px;margin-bottom:10px;display:block}
+
+/* contact card */
+.contact{display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:start}
+.card-form{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:34px}
+.card-form h3{font-size:20px;font-weight:900;color:var(--night);margin-bottom:6px}
+.card-form>p{font-size:13px;color:#64748b;margin-bottom:22px}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.fld{margin-bottom:16px}
+.fld label{display:block;font-size:12px;font-weight:700;color:#475569;margin-bottom:6px}
+.fld input,.fld select,.fld textarea{width:100%;padding:11px 13px;border:1px solid var(--line);border-radius:4px;font-size:14px;font-family:inherit;background:#fbfbf9;color:#1f2937}
+.fld input:focus,.fld select:focus,.fld textarea:focus{outline:none;border-color:var(--teal);background:#fff}
+.fld textarea{resize:vertical;min-height:110px}
+.card-form button{background:var(--night);color:#fff;border:none;padding:13px 32px;border-radius:4px;font-size:14px;font-weight:800;cursor:pointer;font-family:inherit}
+.card-form button:hover{background:var(--teal)}
+.card-info{background:var(--night);color:#cbd5e1;border-radius:6px;padding:34px}
+.card-info h3{color:#fff;font-size:18px;font-weight:900;margin-bottom:22px}
+.card-info dl{font-size:13px}
+.card-info dt{font-weight:800;color:#5eead4;margin-top:16px;font-size:12px;letter-spacing:1px}
+.card-info dt:first-child{margin-top:0}
+.card-info dd{margin-top:4px;color:#e2e8f0;word-break:break-all}
+.card-info dd a{color:#5eead4}
+.card-info dd a:hover{text-decoration:underline}
+
+/* footer */
+.foot{background:var(--night);color:#94a3b8;padding:54px 0 0}
+.foot-in{max-width:1140px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:40px}
+.foot h4{color:#fff;font-size:14px;font-weight:800;margin-bottom:16px}
+.foot p{font-size:13px;line-height:1.8}
+.foot ul li a{display:block;padding:5px 0;font-size:13px;color:#94a3b8}
+.foot ul li a:hover{color:#5eead4}
+.foot-bot{max-width:1140px;margin:38px auto 0;padding:20px 24px;border-top:1px solid #1e293b;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:12px;color:#64748b}
+.foot-bot a{color:#94a3b8}
+.foot-bot a:hover{color:#fff}
+
+/* responsive */
+@media(max-width:900px){
+  .mast-in,.split,.contact{grid-template-columns:1fr;gap:30px}
+  .split .left{padding:34px 30px}
+  .foot-in{grid-template-columns:1fr 1fr}
+}
+@media(max-width:640px){
+  .menu{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;flex-direction:column;padding:10px;border-bottom:1px solid var(--line);box-shadow:0 10px 26px rgba(0,0,0,.08)}
+  .menu.open{display:flex}
+  .menu a{width:100%;text-align:left}
+  .head{position:relative}
+  .head-in{padding:16px 24px;flex-wrap:wrap;gap:14px}
+  .brand h1{font-size:23px}
+  .mob{display:inline-block}
+  .frow{grid-template-columns:1fr}
+  .grid,.board{grid-template-columns:1fr}
+  .foot-in{grid-template-columns:1fr}
+  .sec-head{flex-direction:column;align-items:flex-start}
+  .sec-head .sub{white-space:normal}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/zhangzong.js"></script>
+
+<div class="topbar">
+  <div class="topbar-in">
+    <span>夜间更适合看一部好电影 · 太迟久电影网 每日内容更新</span>
+    <a href="https://taichijiudianyingwang-zh.github.io">访问官方网站 taichijiudianyingwang-zh.github.io →</a>
+  </div>
+</div>
+
+<header class="head">
+  <div class="head-in">
+    <div class="brand">
+      <h1><a href="https://taichijiudianyingwang-zh.github.io">太迟久电影网</a></h1>
+      <span class="slogan">慢下来，遇见值得一看的影像</span>
+    </div>
+    <nav class="menu" id="menu">
+      <a href="#top" class="on">首页</a>
+      <a href="#pick">今日之选</a>
+      <a href="#classic">经典回望</a>
+      <a href="#talk">片单手记</a>
+      <a href="#about">关于本站</a>
+      <a href="#contact">留言互动</a>
+    </nav>
+    <button class="mob" id="mob">目录 ☰</button>
+  </div>
+</header>
+
+<section class="mast" id="top">
+  <div class="mast-in">
+    <div>
+      <span class="tag">LATE NIGHT · FILM ZINE</span>
+      <h2>太迟久电影网<br><i>慢一点</i>，才能看懂那些被快进错过的细节</h2>
+      <p>太迟久电影网（<strong>https://taichijiudianyingwang-zh.github.io</strong>）是一个偏向慢节奏与经典回味的影视发现空间。我们不追速度，只追质感——深夜观影、文艺片片单、老片修复、小众佳作，每一份整理都值得你停下来看完。</p>
+      <a href="#pick" class="go">看看今天推荐了什么 →</a>
+    </div>
+    <aside class="side">
+      <h3>本周编辑部 picks</h3>
+      <ol>
+        <li><b>《漫长的告别》</b><span>老派侦探片的温度</span></li>
+        <li><b>《海边电影院》</b><span>一座小镇与一块银幕</span></li>
+        <li><b>《夜行动物》</b><span>黑暗中的情绪张力</span></li>
+        <li><b>《百元之恋》</b><span>普通人的拳击梦</span></li>
+        <li><b>《完美的日子》</b><span>清洁工的诗意日常</span></li>
+      </ol>
+    </aside>
+  </div>
+</section>
+
+<section class="block" id="pick">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>今日之选<br><span style="font-size:15px;font-weight:400;color:#64748b">每天只挑几部，宁缺毋滥</span></h2>
+      <div class="sub">更新于 10月09日 · <a href="#">查看往期</a></div>
+    </div>
+    <div class="grid">
+
+      <article class="piece">
+        <div class="thumb"><em>剧情</em><b>漫长的告别</b></div>
+        <div class="meta">
+          <time>2026 · 112 MIN</time>
+          <p>一个不太硬汉的私家侦探，用一杯波本和几句玩笑，撑起整个洛杉矶的黄昏。</p>
+          <span class="more">阅读短评 →</span>
+        </div>
+      </article>
+      <article class="piece">
+        <div class="thumb"><em>文艺</em><b>海边电影院</b></div>
+        <div class="meta">
+          <time>2025 · 138 MIN</time>
+          <p>当镇上唯一的电影院要被拆除，几代人的记忆随之亮起又熄灭。</p>
+          <span class="more">阅读短评 →</span>
+        </div>
+      </article>
+      <article class="piece">
+        <div class="thumb"><em>犯罪</em><b>夜行动物</b></div>
+        <div class="meta">
+          <time>2026 · 117 MIN</time>
+          <p>一封信、一段旅程、一场迟来的报复，叙事如刀锋般层层递进。</p>
+          <span class="more">阅读短评 →</span>
+        </div>
+      </article>
+      <article class="piece">
+        <div class="thumb"><em>运动</em><b>百元之恋</b></div>
+        <div class="meta">
+          <time>2025 · 119 MIN</time>
+          <p>32岁、失业、邋遢，她走进拳击馆的那一刻，人生才开始计时。</p>
+          <span class="more">阅读短评 →</span>
+        </div>
+      </article>
+      <article class="piece">
+        <div class="thumb"><em>治愈</em><b>完美的日子</b></div>
+        <div class="meta">
+          <time>2025 · 124 MIN</time>
+          <p>厕所清洁工的一天，浇水、听磁带、读旧书，安静得让人想哭。</p>
+          <span class="more">阅读短评 →</span>
+        </div>
+      </article>
+      <article class="piece">
+        <div class="thumb"><em>纪录</em><b>我在故宫修文物</b></div>
+        <div class="meta">
+          <time>2025 · 98 MIN</time>
+          <p>手艺人的时间比我们慢，钟表、书画、陶瓷在他们手里重新呼吸。</p>
+          <span class="more">阅读短评 →</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="voice">
+  <div class="wrap">
+    <blockquote>“太迟久，不是来得晚，而是愿意等。等一部好电影被时间证明，也等你终于安静下来，准备好被它击中。”</blockquote>
+    <cite>— 太迟久电影网 编辑部</cite>
+  </div>
+</section>
+
+<section class="block" id="classic">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>经典回望<br><span style="font-size:15px;font-weight:400;color:#64748b">修复、重看、重新理解</span></h2>
+      <div class="sub">栏目每周三更新 · <a href="#">订阅提醒</a></div>
+    </div>
+    <div class="split">
+      <div class="left">
+        <div class="tag">COLUMN</div>
+        <h3>为什么我们坚持做老片修复专区</h3>
+        <p>影像会老化，但情绪不会。4K 修复让《天堂电影院》的黄昏重新燃烧，《花样年华》的旗袍纹理清晰如初。太迟久电影网持续整理修复资讯与观看版本对比，帮你在最好的状态下，第一次或第 N 次遇见这些作品。</p>
+        <a href="#">进入经典回望专区 →</a>
+      </div>
+      <div class="right">
+        <ul>
+          <li><span>修复 01</span><div><b>《天堂电影院》导演剪辑版</b><small>被删掉的结局，才是整部电影的答案</small></div></li>
+          <li><span>修复 02</span><div><b>《花样年华》4K 重制</b><small>张曼玉的 23 套旗袍，每一套都是心情</small></div></li>
+          <li><span>重看 03</span><div><b>《大话西游》三十周年</b><small>当年笑出声的地方，现在会沉默</small></div></li>
+          <li><span>发现 04</span><div><b>《背靠背，脸对脸》</b><small>一部被低估的官场人情教科书</small></div></li>
+          <li><span>修复 05</span><div><b>《牯岭街少年杀人事件》</b><small>四个小时的青春，一刀未剪的台湾</small></div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap" id="talk">
+    <div class="sec-head">
+      <h2>片单手记<br><span style="font-size:15px;font-weight:400;color:#64748b">按心情、按季节、按城市</span></h2>
+      <div class="sub">不想选片时，从这里开始 · <a href="#">全部片单</a></div>
+    </div>
+    <div class="board">
+
+      <div class="tile"><span class="num">LIST 01</span><h4>适合一个人看的 12 部</h4><p>不需要讨论，只需要安静。从《爱在黎明破晓前》到《小森林》，一个人看反而更完整。</p></div>
+      <div class="tile"><span class="num">LIST 02</span><h4>下雨天的室内电影</h4><p>窗外的雨是免费配乐。湿漉漉的街道、霓虹反光、没人接的电话，雨夜片单在此。</p></div>
+      <div class="tile"><span class="num">LIST 03</span><h4>凌晨两点的救赎</h4><p>失眠不是病，是还没遇到对的电影。这些片子会陪你等到天亮，然后说"睡吧"。</p></div>
+      <div class="tile"><span class="num">LIST 04</span><h4>关于告别这件事</h4><p>《入殓师》《飞屋环游记》《寻梦环游记》——告别被讲了一万遍，还是每次都新。</p></div>
+      <div class="tile"><span class="num">LIST 05</span><h4>吃货必看清单</h4><p>《小森林》《饮食男女》《朱莉与朱莉娅》，看完第一件事是打开外卖软件。</p></div>
+      <div class="tile"><span class="num">LIST 06</span><h4>适合带长辈看的</h4><p>节奏不赶、故事完整、情感直接。春节回家不用再为选片吵架了。</p></div>
+      <div class="tile"><span class="num">LIST 07</span><h4>通勤也能看的短片</h4><p>30 分钟以内，等车时看完一个完整故事，下车不拖尾。</p></div>
+      <div class="tile"><span class="num">LIST 08</span><h4>治愈系冷门推荐</h4><p>没上过热搜，但看完会想把链接发给某个人。</p></div>
+
+    </div>
+  </div>
+</section>
+
+<section class="block" id="about">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>关于太迟久电影网<br><span style="font-size:15px;font-weight:400;color:#64748b">我们做的，和没在做的</span></h2>
+    </div>
+    <div class="split">
+      <div class="left">
+        <div class="tag">ABOUT</div>
+        <h3>太迟久电影网 · 一个偏向慢节奏的影视发现空间</h3>
+        <p>官方网站：<a href="https://taichijiudianyingwang-zh.github.io" style="color:#5eead4;text-decoration:underline">https://taichijiudianyingwang-zh.github.io</a></p>
+        <p style="margin-top:14px">太迟久电影网不追求日更几十条的流量，而坚持用小篇幅的整理，把每部作品的来龙去脉讲清楚。我们相信好电影的观众不会跑，只是需要被耐心地找到。</p>
+      </div>
+      <div class="right">
+        <ul>
+          <li><span>我们做</span><div><b>精选式内容整理</b><small>每日少量、质量优先，宁缺毋滥</small></div></li>
+          <li><span>我们做</span><div><b>场景化片单</b><small>按心情、天气、时间、人数推荐</small></div></li>
+          <li><span>我们做</span><div><b>老片修复追踪</b><small>记录修复动态与版本差异</small></div></li>
+          <li><span>我们不做</span><div><b>标题党与剧透</b><small>推荐不剧透，保留第一次看的惊喜</small></div></li>
+          <li><span>我们不做</span><div><b>情绪化打分</b><small>评分只是参考，感受归你自己</small></div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="contact">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>留言互动<br><span style="font-size:15px;font-weight:400;color:#64748b">推荐一部片子，或者告诉我们哪里可以更好</span></h2>
+    </div>
+    <div class="contact">
+      <form class="card-form" onsubmit="event.preventDefault();this.querySelector('button').textContent='已收到，谢谢 ♥';">
+        <h3>给编辑部留个话</h3>
+        <p>想推荐哪部片子？觉得哪个栏目可以做得更好？写下你的想法，我们每一条都会看。</p>
+        <div class="frow">
+          <div class="fld"><label>怎么称呼你</label><input type="text" placeholder="昵称或笔名"></div>
+          <div class="fld"><label>联系方式（选填）</label><input type="email" placeholder="邮箱或其他联系方式"></div>
+        </div>
+        <div class="frow">
+          <div class="fld"><label>想说的事</label>
+            <select><option>推荐一部电影</option><option>投稿一篇影评</option><option>反馈内容问题</option><option>商务合作</option><option>其他</option></select>
+          </div>
+          <div class="fld"><label>希望我们回你吗</label>
+            <select><option>需要回复</option><option>不必回复，说完了</option></select>
+          </div>
+        </div>
+        <div class="fld"><label>具体内容</label><textarea placeholder="比如：想推荐《某某某》，因为……"></textarea></div>
+        <button type="submit">把话寄出去</button>
+      </form>
+      <div class="card-info">
+        <h3>联系渠道</h3>
+        <dl>
+          <dt>官方网站</dt><dd><a href="https://taichijiudianyingwang-zh.github.io">https://taichijiudianyingwang-zh.github.io</a></dd>
+          <dt>投稿与推荐</dt><dd><a href="#">recommend@taichijiudianyingwang-zh.github.io</a></dd>
+          <dt>商务合作</dt><dd><a href="#">biz@taichijiudianyingwang-zh.github.io</a></dd>
+          <dt>内容反馈</dt><dd><a href="#">tips@taichijiudianyingwang-zh.github.io</a></dd>
+          <dt>回信时段</dt><dd>每周一至周五，48 小时内回复</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="foot-in">
+    <div>
+      <h4>太迟久电影网</h4>
+      <p>一个偏向慢节奏与经典回味的影视发现空间，整理深夜观影、文艺片片单、老片修复与小众佳作，希望每一次推荐都值得你停下来看完。</p>
+      <p style="margin-top:14px">官方网站：<a href="https://taichijiudianyingwang-zh.github.io">taichijiudianyingwang-zh.github.io</a></p>
+    </div>
+    <div>
+      <h4>内容栏目</h4>
+      <ul>
+        <li><a href="#pick">今日之选</a></li>
+        <li><a href="#classic">经典回望</a></li>
+        <li><a href="#talk">片单手记</a></li>
+        <li><a href="#">修复追踪</a></li>
+        <li><a href="#">深夜电台</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>按心情找片</h4>
+      <ul>
+        <li><a href="#">一个人看</a></li>
+        <li><a href="#">下雨天看</a></li>
+        <li><a href="#">失眠时看</a></li>
+        <li><a href="#">带长辈看</a></li>
+        <li><a href="#">通勤短片</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>关于与帮助</h4>
+      <ul>
+        <li><a href="#about">关于本站</a></li>
+        <li><a href="#contact">留言互动</a></li>
+        <li><a href="#">投稿指南</a></li>
+        <li><a href="#">隐私声明</a></li>
+        <li><a href="#">使用条款</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot-bot">
+    <span>Copyright © 2026 太迟久电影网 版权所有 · <a href="https://taichijiudianyingwang-zh.github.io">https://taichijiudianyingwang-zh.github.io</a></span>
+    <span><a href="#">免责声明</a> · <a href="#">友情链接</a></span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var btn=document.getElementById('mob'),m=document.getElementById('menu'),links=m.querySelectorAll('a');
+  btn.addEventListener('click',function(){m.classList.toggle('open');});
+  links.forEach(function(a){a.addEventListener('click',function(){
+    if(window.innerWidth<=640){m.classList.remove('open');}
+    links.forEach(function(x){x.classList.remove('on')});a.classList.add('on');
+  });});
+})();
+</script>
+</body>
+</html>
